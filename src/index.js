@@ -1,4 +1,2 @@
-import './index.html';
-import './style.css';
-
 console.log('funguju!');
+const navBtn = document.querySelector('#nav-btn');
