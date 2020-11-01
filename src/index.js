@@ -35,12 +35,29 @@ const Layer = (props) => {
   return element;
 };
 
-const layer1 = Layer({ color: '#feeeca', label: 'mléčná pěna' });
+/* const layer1 = Layer({ color: '#feeeca', label: 'mléčná pěna' });
 const layer2 = Layer({ color: '#fed7b0', label: 'teplé mléko' });
 const layer3 = Layer({ color: '#613916', label: 'espresso' });
 
 appElm.appendChild(layer1);
 appElm.appendChild(layer2);
-appElm.appendChild(layer3);
+appElm.appendChild(layer3); */
 
 // Seznam ingrediencí
+const layers = [
+  {
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  },
+  {
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  },
+  {
+    color: '#613916',
+    label: 'espresso',
+  },
+];
+layers.forEach((layer) => {
+  appElm.appendChild(Layer(layer));
+});
