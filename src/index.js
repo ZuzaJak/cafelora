@@ -42,3 +42,5 @@ const layer3 = Layer({ color: '#613916', label: 'espresso' });
 appElm.appendChild(layer1);
 appElm.appendChild(layer2);
 appElm.appendChild(layer3);
+
+// Seznam ingrediencí
